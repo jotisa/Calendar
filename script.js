@@ -91,6 +91,18 @@ addEventListener('click', () =>{
     date.setMonth(date.getMonth() + 2)    
     renderCalendar();
 })
-    
+
+document.querySelector('.prevsemester').
+addEventListener('click', () =>{
+    date.setMonth(date.getMonth() - 6);
+    renderCalendar();
+})
+
+document.querySelector('.nextsemester').
+addEventListener('click', () =>{
+    date.setMonth(date.getMonth() + 6)    
+    renderCalendar();
+})
+
 
 renderCalendar();
