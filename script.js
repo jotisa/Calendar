@@ -79,4 +79,18 @@ document.querySelector(".next").addEventListener("click", () => {
   renderCalendar();
 });
 
+
+document.querySelector('.prevdouble').
+addEventListener('click', () =>{
+    date.setMonth(date.getMonth() - 2 );
+    renderCalendar();
+})
+
+document.querySelector('.nextdouble').
+addEventListener('click', () =>{
+    date.setMonth(date.getMonth() + 2)    
+    renderCalendar();
+})
+    
+
 renderCalendar();
