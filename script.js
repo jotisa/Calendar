@@ -79,10 +79,9 @@ document.querySelector(".next").addEventListener("click", () => {
   renderCalendar();
 });
 
-
 document.querySelector('.prevdouble').
 addEventListener('click', () =>{
-    date.setMonth(date.getMonth() - 2 );
+    date.setMonth(date.getMonth() - 2);
     renderCalendar();
 })
 
@@ -91,6 +90,21 @@ addEventListener('click', () =>{
     date.setMonth(date.getMonth() + 2)    
     renderCalendar();
 })
+    
+
+/*
+document.querySelector('.prevdouble').
+addEventListener('click', () =>{
+    date.setMonth(date.getMonth() - 2);
+    renderCalendar();
+})
+
+document.querySelector('.nextdouble').
+addEventListener('click', () =>{
+    date.setMonth(date.getMonth() + 2)    
+    renderCalendar();
+})
+*/
 
 document.querySelector('.prevsemester').
 addEventListener('click', () =>{
@@ -103,6 +117,9 @@ addEventListener('click', () =>{
     date.setMonth(date.getMonth() + 6)    
     renderCalendar();
 })
-
-
+    
+document.querySelector(".December").addEventListener('click', () =>{
+  date.setMonth(December)
+  renderCalendar();
+})
 renderCalendar();
