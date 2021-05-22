@@ -41,7 +41,6 @@ const renderCalendar = () => {
     "November",
     "December",
   ];
-
   document.querySelector(".date h1").innerHTML = months[date.getMonth()];
 
   document.querySelector(".date p").innerHTML = new Date().toDateString();
@@ -91,21 +90,6 @@ addEventListener('click', () =>{
     renderCalendar();
 })
     
-
-/*
-document.querySelector('.prevdouble').
-addEventListener('click', () =>{
-    date.setMonth(date.getMonth() - 2);
-    renderCalendar();
-})
-
-document.querySelector('.nextdouble').
-addEventListener('click', () =>{
-    date.setMonth(date.getMonth() + 2)    
-    renderCalendar();
-})
-*/
-
 document.querySelector('.prevsemester').
 addEventListener('click', () =>{
     date.setMonth(date.getMonth() - 6);
@@ -117,9 +101,65 @@ addEventListener('click', () =>{
     date.setMonth(date.getMonth() + 6)    
     renderCalendar();
 })
-    
-document.querySelector(".December").addEventListener('click', () =>{
-  date.setMonth(December)
+
+document.querySelector('.Dec').addEventListener('click', () =>{
+  date.setMonth(11)
   renderCalendar();
 })
+
+document.querySelector('.Jan').addEventListener('click', () =>{
+  date.setMonth(0)
+  renderCalendar();
+})
+
+document.querySelector('.Feb').addEventListener('click', () =>{
+  date.setMonth(1)
+  renderCalendar();
+})
+
+document.querySelector('.Mar').addEventListener('click', () =>{
+  date.setMonth(2)
+  renderCalendar();
+})
+
+document.querySelector('.Apr').addEventListener('click', () =>{
+  date.setMonth(3)
+  renderCalendar();
+})
+
+document.querySelector('.May').addEventListener('click', () =>{
+  date.setMonth(4)
+  renderCalendar();
+})
+
+document.querySelector('.Jun').addEventListener('click', () =>{
+  date.setMonth(5)
+  renderCalendar();
+})
+
+document.querySelector('.Jul').addEventListener('click', () =>{
+  date.setMonth(6)
+  renderCalendar();
+})
+
+document.querySelector('.Aug').addEventListener('click', () =>{
+  date.setMonth(7)
+  renderCalendar();
+})
+
+document.querySelector('.Sep').addEventListener('click', () =>{
+  date.setMonth(8)
+  renderCalendar();
+})
+
+document.querySelector('.Oct').addEventListener('click', () =>{
+  date.setMonth(9)
+  renderCalendar();
+})
+
+document.querySelector('.Nov').addEventListener('click', () =>{
+  date.setMonth(10)
+  renderCalendar();
+})
+
 renderCalendar();
